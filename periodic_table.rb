@@ -10,7 +10,7 @@
 #     their name, atomic weight and atomic number                |##
 #                                                                |##
 #   - Implement a way to round the atomic weight of the element  |##
-#     to the nearest whole numner                                |## ʕノ•ᴥ•ʔノ ︵ ┻━┻
+#     to the nearest whole number                                |## ʕノ•ᴥ•ʔノ ︵ ┻━┻
 #                                                                |##
 #   - Implement a way to display your three elements and all     |##
 #     their attributes, including their atomic weight rounded    |##
