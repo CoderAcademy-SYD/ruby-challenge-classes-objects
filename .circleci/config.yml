@@ -38,7 +38,7 @@ jobs:
 
     - run:
         name: make test data directory
-        command: mkdir test-results/rspec
+        command: mkdir -p test-results/rspec
 
 
 
