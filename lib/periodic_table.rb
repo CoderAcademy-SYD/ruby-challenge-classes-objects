@@ -60,7 +60,7 @@ end
 # A function that reads the a json file and parses it to a
 # Hash using the JSON gem.
 def ingest_elements_from_json
-  file = File.read('periodic_table.json') # Reads the periodic_table.json file and assigns it to a variable
+  file = File.read('./lib/periodic_table.json') # Reads the periodic_table.json file and assigns it to a variable
   JSON.parse(file) # Uses the JSON gem to parse the json into a Ruby Hash
 end
 
