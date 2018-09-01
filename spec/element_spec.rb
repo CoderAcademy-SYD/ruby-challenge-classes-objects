@@ -25,7 +25,7 @@ describe Element do
   end
   describe '.count' do
     it "to return 119 elements" do
-      expect(Element.count).to eq(118)
+      expect(Element.count).to eq(119)
     end
   end
 end
