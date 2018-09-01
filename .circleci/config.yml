@@ -36,7 +36,10 @@ jobs:
         - ./vendor/bundle
         key: v1-dependencies-{{ checksum "Gemfile.lock" }}
 
-    # run tests!
+    - run:
+        name: make test data directory
+        command: mkdir rspec
+
     - run:
         name: run tests
-        command: bundler exec rspec -f d
+        command: bundle exec rspec --format progress --format RspecJunitFormatter -o ~/rspec/rspec.xml
