@@ -38,14 +38,16 @@ jobs:
 
     - run:
         name: make test data directory
-        command: mkdir rspec
+        command: mkdir test-results/rspec
+
+
 
     - run:
         name: run tests
-        command: bundle exec rspec --format progress --format RspecJunitFormatter -o ~/rspec/rspec.xml
+        command: bundle exec rspec --format progress --format RspecJunitFormatter -o ~/test-results/rspec/rspec.xml
 
     - store_test_results:
-        path: ~/rspec
+        path: ~/test-results/rspec
 
     - store_artifacts:
-        path: ~/rspec
+        path: ~/test-results/rspec
