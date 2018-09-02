@@ -40,14 +40,17 @@ jobs:
         name: make test data directory
         command: mkdir -p test-results/rspec
 
-
+# See docs for configuring Rspec in CircleCI: https://circleci.com/docs/2.0/collect-test-data/#rspec
 
     - run:
         name: run tests
         command: bundle exec rspec --format progress --format RspecJunitFormatter -o ~/test-results/rspec/rspec.xml
 
+# See docs for store test results: https://circleci.com/docs/2.0/configuration-reference/#store_test_results
+
     - store_test_results:
         path: ~/test-results
 
+# See docs for store artifacts: https://circleci.com/docs/2.0/configuration-reference/#store_artifacts
     - store_artifacts:
         path: ~/test-results
